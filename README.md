@@ -16,9 +16,23 @@
 
 ## Requisitos
 
+- Yarn
 - Docker
 - Docker Compose
 
 ## Rodando o projeto
 
- 
+Para subir o Kafka rode: `$ docker-compose up --build`
+
+Para subir a api: 
+`$ cd kafkanode/api`
+`$ yarn dev`
+
+Para subir o microserviço:
+`$ cd kafkanode/certification`
+`$ yarn dev`
+
+
+## Executando
+
+Faça uma requisição POST para: `http://localhost:3333/certifications`
